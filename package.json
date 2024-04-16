@@ -1,0 +1,12 @@
+{
+  "name": "projektprogramistyczny-drogalski02",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/UniversityOfGdanskProjects/projektprogramistyczny-drogalski02.git",
+  "author": "Damian <d.rogalski.417@studms.ug.edu.pl>",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

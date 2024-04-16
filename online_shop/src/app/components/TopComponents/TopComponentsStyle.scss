@@ -1,0 +1,325 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/search.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/smartphone.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/laptop.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/tv.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/music-speaker.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/mouse.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/screen.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/sun.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css');
+
+
+.TopComponentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 1em;
+    .Logo {
+        display: flex;
+        font-size: 3em;
+        font-weight: bold;
+        :first-child {
+            color: rgb(0, 200, 255);
+            font-weight: 300;
+        }
+    }
+    
+    .SearchBar {
+        height: 2.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input {
+            padding: 0.25em;
+            width: 40vw;
+            height: 100%;
+            border: 1px solid rgb(0, 200, 255);
+            border-radius: 2em;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            padding-left: 1em;
+
+        }
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(0, 200, 255);
+            border: none;
+            width: 4em;
+            height: 100%;
+            border-top-right-radius: 2em;
+            border-bottom-right-radius: 2em;
+            cursor: pointer;
+            color: black;
+
+
+        }
+        button:hover {
+            transition: box-shadow 0.25s ease;
+            -webkit-box-shadow: 0px 0px 8px -2px rgba(0, 200, 255, 1);
+            -moz-box-shadow: 0px 0px 8px -2px rgba(0, 200, 255, 1);
+            box-shadow: 0px 0px 8px -2px rgba(0, 200, 255, 1);
+        }
+        :focus {
+            outline: none;
+            -webkit-box-shadow: 0px 0px 8px -2px rgba(0, 200, 255, 1);
+            -moz-box-shadow: 0px 0px 8px -2px rgba(0, 200, 255, 1);
+            box-shadow: 0px 0px 8px -2px rgba(0, 200, 255, 1);
+        }
+        
+
+    }
+    
+    .TopRightButtons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 2.5vw;
+        padding-right: 0.25em;
+        overflow: hidden;
+        border: 1px solid rgb(0, 200, 255);
+        background-color: rgb(0, 200, 255);
+        border-radius: 10em;
+        button {
+            margin: 0.5em;
+        }
+        div {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            border: none;
+
+            a {
+                margin: 0.5em;
+                outline: none;
+                text-decoration: none; 
+            }
+
+        }
+
+    }
+}
+
+.row2 {
+    -webkit-box-shadow: 0px 0px 8px -2px rgba(0, 200, 255, 1);
+    -moz-box-shadow: 0px 0px 8px -2px rgba(0, 200, 255, 1);
+    box-shadow: 0px 0px 8px -2px rgba(0, 200, 255, 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgb(0, 200, 255);
+    button {
+        padding: 0.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            padding-left: 0.5em;
+        
+        }
+    }
+}
+
+.ShoppingCartContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    .Exit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 2em;
+        padding: 1em;
+    }
+    .ShoppingCart{
+        padding: 1em;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        width: 100vw;
+        button {
+            font-weight: bold;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1 {
+                font-size: 3em;
+            }
+            p {
+                font-size: 1.5em;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                width: 100%;
+                li {
+                    padding: 1em;
+                    display: flex;
+                    flex-direction: row;
+                    margin: 1em;
+                    border-radius: 1.5em;
+                    padding-right: 1em;
+                    span {
+                        font-size: 0.75em;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding-left: 1em;
+                        div {
+                            padding: 0.5em;
+                            display: flex;
+                            flex-direction: row;
+                            font-size: 3em;
+                            width: 3em;
+                            justify-content: space-between;
+                        }
+                    }
+
+                }
+                li:hover {
+                    transition: box-shadow 0.25s ease;
+                    -webkit-box-shadow: 0px 0px 11px -2px rgba(0, 200, 255, 1);
+                    -moz-box-shadow: 0px 0px 11px -2px rgba(0, 200, 255, 1);
+                    box-shadow: 0px 0px 11px -2px rgba(0, 200, 255, 1);
+                }
+            }
+            .sum {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                h2 {
+                    padding-bottom: 1em;
+                    font-weight: bold;
+                }
+                h3 {
+                    font-weight: bold;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    li {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        padding: 0.5em;
+                        font-size: 1.5em;
+                    }
+                }
+                button {
+                    padding: 0.5em;
+                    border: 1px solid rgb(0, 200, 255);
+                    border-radius: 2em;
+                    width: 100%;
+                    margin-top: 1em;
+                }
+                button:hover {
+                    transition: all 0.25s ease;
+                    background-color: rgb(0, 200, 255);
+                    color: white;
+                    -webkit-box-shadow: 0px 0px 11px -2px rgba(0, 200, 255, 1);
+                    -moz-box-shadow: 0px 0px 11px -2px rgba(0, 200, 255, 1);
+                    box-shadow: 0px 0px 11px -2px rgba(0, 200, 255, 1);
+                
+                }
+            }
+        .orderContainer {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin-top: 1em;
+            ul {
+                width: 100%;
+            }
+            form {
+                margin: 1em;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 1em;
+                padding: 2em;
+                border-radius: 2em;
+                align-items: center;
+                justify-content: center;
+                -webkit-box-shadow: 0px 0px 11px -2px rgba(0, 200, 255, 1);
+                -moz-box-shadow: 0px 0px 11px -2px rgba(0, 200, 255, 1);
+                box-shadow: 0px 0px 11px -2px rgba(0, 200, 255, 1);
+                input {
+                    border: 1px solid rgb(0, 200, 255);
+                    padding: 0.5em;
+                    border-radius: 2em;
+                }
+                
+                label {
+                    padding: 0.5em;
+                    font-size: 1.5em;
+                }
+                select {
+                    border: 1px solid rgb(0, 200, 255);
+                    padding: 5em;
+                    border-radius: 2em;
+                    width: 100%;
+                }
+                :focus {
+                    outline: none;
+                    -webkit-box-shadow: 0px 0px 11px -2px rgba(0, 200, 255, 1);
+                    -moz-box-shadow: 0px 0px 11px -2px rgba(0, 200, 255, 1);
+                    box-shadow: 0px 0px 11px -2px rgba(0, 200, 255, 1);
+                }
+                button {
+                    grid-column: span 2;
+                    padding: 0.5em;
+                    border: 1px solid rgb(0, 200, 255);
+                    border-radius: 2em;
+                }
+                button:hover {
+                    transition: all 0.25s ease;
+                    background-color: rgb(0, 200, 255);
+                    color: white;
+                    -webkit-box-shadow: 0px 0px 11px -2px rgba(0, 200, 255, 1);
+                    -moz-box-shadow: 0px 0px 11px -2px rgba(0, 200, 255, 1);
+                    box-shadow: 0px 0px 11px -2px rgba(0, 200, 255, 1);
+                }
+                .errors {
+                    grid-column: span 2;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    color: red;
+                    font-size: 0.75em;
+                    padding: 0.5em;
+                }
+            }
+
+        }
+    }
+    }
+
+}
