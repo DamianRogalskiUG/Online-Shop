@@ -187,7 +187,7 @@ export const MainProductsList: FC = () => {
                   <div>
                     <span>{item.title}</span>
                     <span>{item.price} PLN</span>
-                    {item && <span>{((item.price + delivery.price).toFixed(2))} PLN {delivery.title} delivery included</span>}
+                    {item && <span>{((Number(item.price) + Number(delivery.price)).toFixed(2))} PLN {delivery.title} delivery included</span>}
                     <span>Available units: {item.amount}</span>
                     <span>
                       {!desc && item.short_description? (
